@@ -1,2 +1,2 @@
 # MoviesApp
-Swift Training App
+Welcome Swift Training App
