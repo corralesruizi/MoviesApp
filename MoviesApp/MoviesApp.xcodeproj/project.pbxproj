@@ -14,6 +14,10 @@
 		8B3721642270D9DD00B5FB1D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3721622270D9DD00B5FB1D /* HomeViewController.xib */; };
 		8B3721712270FB7500B5FB1D /* MoviePosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37216F2270FB7500B5FB1D /* MoviePosterCollectionViewCell.swift */; };
 		8B3721722270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3721702270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib */; };
+		8BC230912278C18100C0572F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2308F2278C18100C0572F /* LoginViewController.swift */; };
+		8BC230922278C18100C0572F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC230902278C18100C0572F /* LoginViewController.xib */; };
+		8BC230952278C34400C0572F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC230942278C34400C0572F /* User.swift */; };
+		8BC230982278C3F500C0572F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC230972278C3F500C0572F /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		8B3721622270D9DD00B5FB1D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		8B37216F2270FB7500B5FB1D /* MoviePosterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCollectionViewCell.swift; sourceTree = "<group>"; };
 		8B3721702270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviePosterCollectionViewCell.xib; sourceTree = "<group>"; };
+		8BC2308F2278C18100C0572F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8BC230902278C18100C0572F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8BC230942278C34400C0572F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BC230972278C3F500C0572F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,8 @@
 		8B3721422270D7FF00B5FB1D = {
 			isa = PBXGroup;
 			children = (
+				8BC230962278C3E700C0572F /* ViewModels */,
+				8BC230932278C31900C0572F /* Models */,
 				8B37214D2270D7FF00B5FB1D /* MoviesApp */,
 				8B37214C2270D7FF00B5FB1D /* Products */,
 			);
@@ -58,10 +68,8 @@
 		8B37214D2270D7FF00B5FB1D /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BC230992278C45A00C0572F /* Config */,
 				8B3721602270D9C100B5FB1D /* ViewControllers */,
-				8B37214E2270D7FF00B5FB1D /* AppDelegate.swift */,
-				8B3721552270D7FF00B5FB1D /* Assets.xcassets */,
-				8B3721572270D7FF00B5FB1D /* LaunchScreen.storyboard */,
 				8B37215A2270D7FF00B5FB1D /* Info.plist */,
 			);
 			path = MoviesApp;
@@ -70,6 +78,7 @@
 		8B3721602270D9C100B5FB1D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BC2308E2278C16700C0572F /* Login */,
 				8B3721652270FB1400B5FB1D /* Home */,
 			);
 			path = ViewControllers;
@@ -92,6 +101,41 @@
 				8B3721702270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8BC2308E2278C16700C0572F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8BC2308F2278C18100C0572F /* LoginViewController.swift */,
+				8BC230902278C18100C0572F /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8BC230932278C31900C0572F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BC230942278C34400C0572F /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BC230962278C3E700C0572F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8BC230972278C3F500C0572F /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BC230992278C45A00C0572F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8B37214E2270D7FF00B5FB1D /* AppDelegate.swift */,
+				8B3721552270D7FF00B5FB1D /* Assets.xcassets */,
+				8B3721572270D7FF00B5FB1D /* LaunchScreen.storyboard */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC230922278C18100C0572F /* LoginViewController.xib in Resources */,
 				8B3721592270D7FF00B5FB1D /* LaunchScreen.storyboard in Resources */,
 				8B3721562270D7FF00B5FB1D /* Assets.xcassets in Resources */,
 				8B3721722270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib in Resources */,
@@ -166,6 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC230952278C34400C0572F /* User.swift in Sources */,
+				8BC230982278C3F500C0572F /* UserViewModel.swift in Sources */,
+				8BC230912278C18100C0572F /* LoginViewController.swift in Sources */,
 				8B3721712270FB7500B5FB1D /* MoviePosterCollectionViewCell.swift in Sources */,
 				8B37214F2270D7FF00B5FB1D /* AppDelegate.swift in Sources */,
 				8B3721632270D9DD00B5FB1D /* HomeViewController.swift in Sources */,
