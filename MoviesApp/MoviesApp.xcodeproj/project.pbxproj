@@ -18,7 +18,6 @@
 		8BC230922278C18100C0572F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC230902278C18100C0572F /* LoginViewController.xib */; };
 		8BC230952278C34400C0572F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC230942278C34400C0572F /* User.swift */; };
 		8BC230982278C3F500C0572F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC230972278C3F500C0572F /* UserViewModel.swift */; };
-		8BC2309B2278DA4900C0572F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8BC2309A2278DA4900C0572F /* Podfile */; };
 		CEF3464BA269C116623096AA /* Pods_MoviesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4091A06B77EA5F5F237E1D /* Pods_MoviesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		8BC230902278C18100C0572F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8BC230942278C34400C0572F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BC230972278C3F500C0572F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		8BC2309A2278DA4900C0572F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		E852807E1D1C8B6652803B99 /* Pods-MoviesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesApp.release.xcconfig"; path = "Target Support Files/Pods-MoviesApp/Pods-MoviesApp.release.xcconfig"; sourceTree = "<group>"; };
 		FC4091A06B77EA5F5F237E1D /* Pods_MoviesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,7 +58,6 @@
 				5FFF4B9F33D4E26A66DBD21E /* Pods-MoviesApp.debug.xcconfig */,
 				E852807E1D1C8B6652803B99 /* Pods-MoviesApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,7 +84,6 @@
 		8B37214D2270D7FF00B5FB1D /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
-				8BC2309A2278DA4900C0572F /* Podfile */,
 				8BC230992278C45A00C0572F /* Config */,
 				8B3721602270D9C100B5FB1D /* ViewControllers */,
 				8B37215A2270D7FF00B5FB1D /* Info.plist */,
@@ -226,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BC2309B2278DA4900C0572F /* Podfile in Resources */,
 				8BC230922278C18100C0572F /* LoginViewController.xib in Resources */,
 				8B3721592270D7FF00B5FB1D /* LaunchScreen.storyboard in Resources */,
 				8B3721562270D7FF00B5FB1D /* Assets.xcassets in Resources */,
