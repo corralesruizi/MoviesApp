@@ -14,6 +14,11 @@ class RMMovie: Object {
     @objc dynamic var title: String = ""
     @objc dynamic var poster_path: String = ""
     @objc dynamic var release_date: String = ""
+    
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 

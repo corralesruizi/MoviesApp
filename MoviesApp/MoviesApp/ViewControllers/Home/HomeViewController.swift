@@ -10,9 +10,17 @@ class HomeViewController: UIViewController {
         setCollectionProperties()
         
         GetMovies {[weak self] (movies: [Movie]) in
-            DispatchQueue.main.async {
-                self?.movies=movies
-                self?.moviesCollecionView.reloadData()
+            
+            DispatchQueue.global(qos: .background).sync {
+                DatabaseClient.sharedInstance.Save(movies: movies)
+            }
+            
+            DispatchQueue.global(qos: .background).sync {
+               let movies = DatabaseClient.sharedInstance.get()
+                DispatchQueue.main.async {
+                    self?.movies=movies
+                    self?.moviesCollecionView.reloadData()
+                }
             }
         }
         

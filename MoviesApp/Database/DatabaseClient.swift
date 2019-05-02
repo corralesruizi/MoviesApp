@@ -2,16 +2,18 @@ import Foundation
 import RealmSwift
 
 
-final class DatabaseClient
+class DatabaseClient
 {
+    static var sharedInstance = DatabaseClient()
+    
+    private init(){}
     
     private var realmDb: Realm {
         return try! Realm()
     }
     
-    func Save(movies: [RMMovie])
+    func Save(movies: [Movie])
     {
-        dispar
         try! realmDb.write {
             movies.forEach { rmmovie in
                 let object = RMMovie()
