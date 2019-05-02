@@ -23,7 +23,17 @@ func GetMovies(completionBlock:@escaping([Movie])->Void)->Void
         }.resume()
 }
 
-func GetPoster(posterUrl:String,completionBlock:@escaping([Movie])->Void)->Void
+func GetPoster(posterUrl:String,completionBlock:@escaping(Data)->Void)->Void
 {
+    let jsonUrl = "https://image.tmdb.org/t/p/w185\(posterUrl)"
+    print(jsonUrl)
     
+    guard let url = URL(string: jsonUrl) else {return}
+
+    URLSession.shared.dataTask(with: url) { (data, response, error) in
+
+        guard let data = data else {return}
+        completionBlock(data)
+    
+        }.resume()
 }

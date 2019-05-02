@@ -13,6 +13,7 @@ class MoviePosterCollectionViewCell: UICollectionViewCell {
     static var cellKey: String = "MoviePosterCollectionViewCell";
     static var cellNib: UINib = UINib(nibName: MoviePosterCollectionViewCell.cellKey, bundle: nil)
     
+    @IBOutlet weak var imgPoster: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +21,11 @@ class MoviePosterCollectionViewCell: UICollectionViewCell {
     
     func updateImage(imageUrl:String)
     {
-        
+        GetPoster(posterUrl: imageUrl) { [weak self](imageData: Data) in
+            DispatchQueue.main.async {
+                self?.imgPoster.image = UIImage(data: imageData)
+            }
+        }
     }
 
 }

@@ -32,6 +32,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="193" height="169"/>
+            <connections>
+                <outlet property="imgPoster" destination="YL2-wT-Pve" id="Quo-ML-MXx"/>
+            </connections>
             <point key="canvasLocation" x="167.39130434782609" y="110.82589285714285"/>
         </collectionViewCell>
     </objects>

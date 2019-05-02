@@ -35,8 +35,11 @@ extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
         -> UICollectionViewCell {
-            return collectionView.dequeueReusableCell(withReuseIdentifier:
-                MoviePosterCollectionViewCell.cellKey, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+                MoviePosterCollectionViewCell.cellKey, for: indexPath) as! MoviePosterCollectionViewCell
+            
+            cell.updateImage(imageUrl: movies[indexPath.row].poster_path)
+            return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
