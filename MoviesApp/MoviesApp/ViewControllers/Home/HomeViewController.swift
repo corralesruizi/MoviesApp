@@ -6,7 +6,6 @@ class HomeViewController: UIViewController {
     var movies = [Movie]()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         setCollectionProperties()
         
@@ -16,8 +15,13 @@ class HomeViewController: UIViewController {
                 self?.moviesCollecionView.reloadData()
             }
         }
-    }
+        
     
+        navigationController?.navigationBar.isTranslucent=false
+        navigationController?.navigationBar.barTintColor = .black
+        
+    }
+
     func setCollectionProperties(){
         
         moviesCollecionView.register(MoviePosterCollectionViewCell.cellNib,

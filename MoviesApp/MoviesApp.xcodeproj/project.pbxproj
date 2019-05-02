@@ -16,6 +16,7 @@
 		8B3721722270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3721702270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib */; };
 		8BBAE676227B3A1000B3FC74 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAE675227B3A1000B3FC74 /* API.swift */; };
 		8BBAE678227B3CD700B3FC74 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAE677227B3CD700B3FC74 /* Movie.swift */; };
+		8BBAE67C227B661600B3FC74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAE67B227B661600B3FC74 /* BaseViewController.swift */; };
 		8BC230912278C18100C0572F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC2308F2278C18100C0572F /* LoginViewController.swift */; };
 		8BC230922278C18100C0572F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC230902278C18100C0572F /* LoginViewController.xib */; };
 		8BC230952278C34400C0572F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC230942278C34400C0572F /* User.swift */; };
@@ -36,6 +37,7 @@
 		8B3721702270FB7500B5FB1D /* MoviePosterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviePosterCollectionViewCell.xib; sourceTree = "<group>"; };
 		8BBAE675227B3A1000B3FC74 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8BBAE677227B3CD700B3FC74 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8BBAE67B227B661600B3FC74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8BC2308F2278C18100C0572F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BC230902278C18100C0572F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8BC230942278C34400C0572F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		8B3721602270D9C100B5FB1D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BBAE67A227B65FE00B3FC74 /* Base */,
 				8BC2308E2278C16700C0572F /* Login */,
 				8B3721652270FB1400B5FB1D /* Home */,
 			);
@@ -130,6 +133,14 @@
 				8BBAE675227B3A1000B3FC74 /* API.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		8BBAE67A227B65FE00B3FC74 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAE67B227B661600B3FC74 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8BC2308E2278C16700C0572F /* Login */ = {
@@ -307,6 +318,7 @@
 				8BC230912278C18100C0572F /* LoginViewController.swift in Sources */,
 				8B3721712270FB7500B5FB1D /* MoviePosterCollectionViewCell.swift in Sources */,
 				8B37214F2270D7FF00B5FB1D /* AppDelegate.swift in Sources */,
+				8BBAE67C227B661600B3FC74 /* BaseViewController.swift in Sources */,
 				8B3721632270D9DD00B5FB1D /* HomeViewController.swift in Sources */,
 				8BBAE678227B3CD700B3FC74 /* Movie.swift in Sources */,
 				8BBAE676227B3A1000B3FC74 /* API.swift in Sources */,
