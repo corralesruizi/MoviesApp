@@ -4,6 +4,7 @@ import RealmSwift
 
 class DatabaseClient
 {
+    //TODO add some mapppers
     static var sharedInstance = DatabaseClient()
     
     private init(){}
@@ -28,10 +29,7 @@ class DatabaseClient
     func get() -> [Movie] {
         
         return realmDb.objects(RMMovie.self).map { object in
-            return Movie(id: object.id,
-                         title: object.title,
-                         poster_path: object.poster_path,
-                         release_date: object.release_date)
+            return object.asDomain()
         }
     }
     

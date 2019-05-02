@@ -21,4 +21,14 @@ class RMMovie: Object {
     }
 }
 
+extension RMMovie{
+    func asDomain ()-> Movie{
+        return Movie(id: id,
+                     title: title,
+                     poster_path: poster_path,
+                     release_date: release_date)
+    }
+    
+}
+
 
