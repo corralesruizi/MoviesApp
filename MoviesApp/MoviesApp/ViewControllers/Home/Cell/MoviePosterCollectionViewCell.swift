@@ -17,5 +17,10 @@ class MoviePosterCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func updateImage(imageUrl:String)
+    {
+        
+    }
 
 }

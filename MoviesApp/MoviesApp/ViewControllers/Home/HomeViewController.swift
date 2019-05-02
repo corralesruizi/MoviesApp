@@ -3,11 +3,19 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var moviesCollecionView: UICollectionView!
+    var movies = [Movie]()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         setCollectionProperties()
+        
+        GetMovies {[weak self] (movies: [Movie]) in
+            DispatchQueue.main.async {
+                self?.movies=movies
+                self?.moviesCollecionView.reloadData()
+            }
+        }
     }
     
     func setCollectionProperties(){
@@ -22,7 +30,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return movies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
